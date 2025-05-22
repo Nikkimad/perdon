@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>¿Me perdonas? 🥺💔</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #ffe6f0;
+      margin-top: 50px;
+    }
+    h1 {
+      font-size: 35px;
+      color: #ff3399;
+    }
+    img {
+      width: 200px;
+      border-radius: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #yes {
+      background-color: #ff66b2;
+      color: white;
+    }
+    #no {
+      background-color: #ccc;
+      color: black;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Me perdonas? 🥺💖</h1>
+  <br><br>
+  <button id="yes" onclick="alert('¡Gracias amorcito! 🥹💘✨💞')">Sí 🥰</button>
+  <button id="no" onmouseover="moveButton()">No 😾</button>
+
+  <script>
+    function moveButton() {
+      const button = document.getElementById('no');
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      button.style.left = `${x}px`;
+      button.style.top = `${y}px`;
+    }
+  </script>
+</body>
+</html>
